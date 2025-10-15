@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Name</title>
+</head>
+<body>
+    <h1>Display Name</h1>
+    <form>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name">
+        <button type="button" onclick="displayName()">Submit</button>
+    </form>
+    <p id="output"></p>
+
+    <script>
+        function displayName() {
+            const name = document.getElementById('name').value;
+            document.getElementById('output').textContent = 'Your name is: ' + name;
+        }
+    </script>
+</body>
+</html>
